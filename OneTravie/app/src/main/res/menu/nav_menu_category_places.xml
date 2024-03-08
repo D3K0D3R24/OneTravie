@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+       android:id="@+id/item_Top"
+       android:icon="@drawable/star_24"
+       android:title="Top"/>
+    <item
+        android:id="@+id/item_P_Magicos"
+        android:icon="@drawable/rehilete"
+        android:title="P.Magicos"/>
+    <item
+        android:id="@+id/item_restaurantes"
+        android:icon="@drawable/ramen_dining_24"
+        android:title="Restaurantes"/>
+    <item
+        android:id="@+id/item_Hoteles"
+        android:icon="@drawable/hotel_24"
+        android:title="Hoteles" />
+</menu>

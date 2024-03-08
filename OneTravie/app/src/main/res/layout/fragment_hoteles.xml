@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeScreen.HotelesScreen.HotelesFragment"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/recyclerViewHoteles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:shimmer_auto_start="true">
+            <RelativeLayout
+                android:id="@+id/loadingRelativeLayoutHoteles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/item_rv_lugares_cercanos_loading"
+                    android:id="@+id/loading1"/>
+                <include layout="@layout/item_rv_lugares_cercanos_loading"
+                    android:layout_below="@id/loading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

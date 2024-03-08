@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/outline_restaurant_24"
+        android:title="Explorar" />
+    <item
+        android:id="@+id/arFragment"
+        android:icon="@drawable/outline_restaurant_24"
+        android:title="ChatBot" />
+    <item
+        android:id="@+id/mapBoxFragment"
+        android:icon="@drawable/outline_restaurant_24"
+        android:title="Agregar local"
+        />
+</menu>

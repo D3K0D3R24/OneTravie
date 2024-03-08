@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/linearLayoutImagen"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="1dp"
+                android:background="#C8C8C8">
+                <FrameLayout
+                    android:id="@+id/imgViewLugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_below="@id/linearLayoutImagen">
+                <FrameLayout
+                    android:id="@+id/txtNombreLugar"
+                    android:layout_width="250dp"
+                    android:layout_height="23dp"
+                    android:background="#C8C8C8"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>
